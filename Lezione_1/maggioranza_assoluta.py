@@ -1,5 +1,5 @@
 """
-    Data una lista di interi vogliamo trovare l'elemento di maggioranza assoluta (vale a dire un elemento che compare nella lista almeno (n//2)+1 volte),
+    Data una lista di n interi vogliamo trovare l'elemento di maggioranza assoluta (vale a dire un elemento che compare nella lista almeno (n//2)+1 volte),
     se non è presente un elemento di maggioranza assoluta ritorniamo None.
 
     Progettare un algoritmo efficiente (possibilmente ottimo) per questo problema. 
@@ -27,7 +27,7 @@ def maggioranza_assoluta_sort(arr: list[int]):
 
     if len(arr) == 0: return None
 
-    target = len(arr) / 2
+    target = len(arr) // 2 + 1
     arr.sort()
 
     # Troviamo la regione più lunga
@@ -36,7 +36,7 @@ def maggioranza_assoluta_sort(arr: list[int]):
     curr_len = 1
     curr_elem = arr[0]
 
-    for i in range(1, len(arr)-1):
+    for i in range(1, len(arr)):
 
         if arr[i] == curr_elem:
             curr_len += 1
@@ -64,7 +64,7 @@ def maggioranza_assoluta_hashmap(arr: list[int]):
         Percui l'algoritmo ha complessità media O(n), ma nel caso peggiore O(n):
     """
 
-    target = len(arr) / 2
+    target = len(arr) // 2 + 1
 
     # Creiamo l'hashmap
     hashmap = {}
@@ -86,6 +86,7 @@ def maggioranza_assoluta_finale(arr: list[int]):
         poichè non ci possono essere (n//2)+1 altri elementi che possano eliminare tutte le occorrenze di x.
     """
 
+    target = len(arr) // 2 + 1
     temp = []
 
     # Costruiamo temp
@@ -99,9 +100,10 @@ def maggioranza_assoluta_finale(arr: list[int]):
     if temp == []: 
         return None
     
-    if arr.count(temp[-1]): 
+    if arr.count(temp[-1]) >= target: 
         return temp[-1]
     
     return None
 
-    
+if __name__ == "__main__":
+    print(maggioranza_assoluta_sort([1, 1, 2, 2, 3, 3]))

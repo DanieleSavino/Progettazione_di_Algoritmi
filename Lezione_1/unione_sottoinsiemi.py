@@ -10,6 +10,8 @@ def unione_sottoinsiemi_bruteforce(sets: list[set], S: set):
 
     for A in sets:
         for B in sets:
+            if A is B: continue
+
             if A|B == S:
                 return True
             
@@ -18,15 +20,18 @@ def unione_sottoinsiemi_bruteforce(sets: list[set], S: set):
 def unione_sottoinsiemi_set(sets: list[set], S: set):
     """
         O(n^2): Nel caso peggiore ci sono solo collisioni e la ricerca nel set avrà complessità O(n),
-        tuttavia in media sarà O(n).
+        tuttavia la complessità media dell'algoritmo sarà media sarà O(n).
     """
 
     seen = set()
 
     for A in sets:
         complement = frozenset(S-A)
-        if complement in seen or len(complement) == 0:
+        if complement in seen:
             return True
         seen.add(frozenset(A))
 
     return False
+
+if __name__ == "__main__":
+    print(unione_sottoinsiemi_bruteforce([{1, 2, 3, 4}], {1, 2, 3, 4}))

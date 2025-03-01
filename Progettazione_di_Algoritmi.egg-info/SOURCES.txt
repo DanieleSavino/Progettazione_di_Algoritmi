@@ -1,0 +1,5 @@
+setup.py
+Progettazione_di_Algoritmi.egg-info/PKG-INFO
+Progettazione_di_Algoritmi.egg-info/SOURCES.txt
+Progettazione_di_Algoritmi.egg-info/dependency_links.txt
+Progettazione_di_Algoritmi.egg-info/top_level.txt
