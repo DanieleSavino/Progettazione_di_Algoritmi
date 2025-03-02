@@ -1,6 +1,6 @@
 # Algoritmo per determinare se un grafo ha un pozzo universale
 
-Dato un grafo come matrice binaria di adiacenza `M` vogliamo sapere se esiste un pozzo universale nel grafo.Ossia un nodo che non abbia nessun arco uscente (Pozzo), e che sia raggiungibile da tutti gli altri nodi (Universale).Progettare un algoritmo con complessità O(n), dove n è il numero di nodi.
+Dato un grafo come matrice binaria di adiacenza `M` vogliamo sapere se esiste un pozzo universale nel grafo.<br>Ossia un nodo che non abbia nessun arco uscente (Pozzo), e che sia raggiungibile da tutti gli altri nodi (Universale).<br><br>Progettare un algoritmo con complessità `O(n)`, dove `n` è il numero di nodi.
 
 1. [**Approccio Bruteforce**](#1-approccio-bruteforce)
 2. [**Approccio con Eliminazione**](#2-approccio-con-eliminazione)
@@ -11,12 +11,12 @@ Dato un grafo come matrice binaria di adiacenza `M` vogliamo sapere se esiste un
 
 ### Descrizione:
 Per ogni elemento controlliamo la riga e la colonna,
-se la colonna contiene `solo 1` vuoldire che è raggiungibile da tutti i nodi,
-se la riga contiene `solo 0` vuodire che non ha archi uscenti
+- se la colonna contiene `solo 1` vuoldire che è raggiungibile da tutti i nodi,
+- se la riga contiene `solo 0` vuodire che non ha archi uscenti
 
 ### Complessità:
-- **Tempo:** O(n²), poichè cicliamo n volte su ogni nodo.
-- **Spazio:** O(1), poichè non utilizza strutture dati aggiuntive.
+- **Tempo:** `O(n²)`, poichè cicliamo `n` volte su ogni nodo.
+- **Spazio:** `O(1)`, poichè non utilizza strutture dati aggiuntive.
 
 ### Codice:
 ```python
@@ -45,14 +45,14 @@ def pozzo_universale_bruteforce(M: list[list[bool]]):
 
 ### Descrizione:
 Per ogni coppia di nodi `i`, `j`:
-Se `M[i][j] == 1` allora c'è un arco tra `i` e `j`, quindi `i` non è pozzo.
-Se `M[i][j] == 0` allora non c'è un arco tra `i` e `j`, quindi `j` non è pozzo universale
+- Se `M[i][j] == 1` allora c'è un arco tra `i` e `j`, quindi `i` non è pozzo.
+- Se `M[i][j] == 0` allora non c'è un arco tra `i` e `j`, quindi `j` non è pozzo universale
 
 Possiamo quindi continuare ad eliminare fino a rimanere con un solo nodo e controllare solo quest'ultimo.
 
 ### Complessità:
-- **Tempo:** O(n), poichè nel while ad ogni iterazione viene eliminato 1 nodo, quindi si itera tra n e 2*n volte.
-- **Spazio:** O(n), poichè dobbiamo creare una lista di lunghezza n.
+- **Tempo:** `O(n)`, poichè nel while ad ogni iterazione viene eliminato 1 nodo, quindi si itera tra `n` e `2*n` volte.
+- **Spazio:** `O(n)`, poichè dobbiamo creare una lista di lunghezza `n`.
 
 ### Codice:
 ```python
