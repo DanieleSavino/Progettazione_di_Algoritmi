@@ -1,6 +1,6 @@
 import pytest
 
-from Lezione_1.conta_triple import (
+from src.lezione_1.conta_triple import (
     conta_triple_bruteforce,
     conta_triple_set
 )
@@ -18,9 +18,9 @@ test_cases = [
 @pytest.mark.parametrize("arr, k, expected", test_cases)
 def test_conta_triple_bruteforce(arr, k, expected):
     res = conta_triple_bruteforce(arr, k)
-    assert res == expected, f"Failed brute force test for {arr} with k={k}, expected {expected} but got {res}"
+    assert res == expected, f"Failed for {arr} with k={k}, expected {expected} but got {res}"
 
 @pytest.mark.parametrize("arr, k, expected", test_cases)
 def test_conta_triple_set(arr, k, expected):
     res = conta_triple_set(arr, k)
-    assert res == expected, f"Failed set test for {arr} with k={k}, expected {expected} but got {res}"
+    assert res == expected, f"Failed for {arr} with k={k}, expected {expected} but got {res}"

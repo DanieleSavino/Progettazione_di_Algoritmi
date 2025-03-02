@@ -1,6 +1,6 @@
 import pytest
 
-from Lezione_1.trova_somma import (
+from src.lezione_1.trova_somma import (
     trova_somma_bruteforce,
     trova_somma_set
 )

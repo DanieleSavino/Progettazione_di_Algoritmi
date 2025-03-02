@@ -1,6 +1,6 @@
 import pytest
 
-from Lezione_1.unione_sottoinsiemi import (
+from src.lezione_1.unione_sottoinsiemi import (
     unione_sottoinsiemi_bruteforce,
     unione_sottoinsiemi_set
 )
@@ -14,8 +14,8 @@ test_cases = [
 
 @pytest.mark.parametrize("sets, S, expected", test_cases)
 def test_unione_sottoinsiemi_bruteforce(sets, S, expected):
-    assert(unione_sottoinsiemi_bruteforce(sets, S) == expected)
+    assert unione_sottoinsiemi_bruteforce(sets, S) == expected, f"Failed for {sets} with S={S}, expected {expected}"
 
 @pytest.mark.parametrize("sets, S, expected", test_cases)
 def test_unione_sottoinsiemi_bruteforce(sets, S, expected):
-    assert(unione_sottoinsiemi_set(sets, S) == expected)
+    assert unione_sottoinsiemi_set(sets, S) == expected, f"Failed for {sets} with S={S}, expected {expected}"
