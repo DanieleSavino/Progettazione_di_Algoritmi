@@ -10,7 +10,7 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
-## 📌 Lezione 1
+## 📌 Lezione 1: Richiami ad `Introduzione agli Algoritmi`
 
 🔹 **Algoritmi trattati**:
 - ✅ [Conta Triple](src/lezione_1/conta_triple.md)
@@ -19,6 +19,15 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 - ✅ [Unione Sottoinsiemi](src/lezione_1/unione_sottoinsiemi.md)
 
 📂 **Percorso file:** `src/lezione_1`
+
+---
+
+## 📌 Lezione 2: Introduzione ai Grafi
+
+🔹 **Algoritmi trattati**:
+- ✅ [Pozzo Universale](src/lezione_2/pozzo_universale.md)
+
+📂 **Percorso file:** `src/lezione_2`
 
 ---
 

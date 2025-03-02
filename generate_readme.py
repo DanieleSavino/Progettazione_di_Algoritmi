@@ -84,7 +84,6 @@ def generate_code_description(code: list[str]) -> list[str]:
 
         description = [l.strip() for l in code[i+1:first_found]]
 
-        # Remove the description lines from the code
         del code[i:first_found+1]
         break
 
@@ -193,6 +192,16 @@ def paths_sorter(x: str) -> int:
     
     return x
 
+def get_folder_desrciption(path: str) -> str:
+    desc_path = f'{path}/description.md'
+    if not os.path.exists(desc_path):
+        return ''
+
+    with open(desc_path, 'r') as f:
+        text = f.read()
+
+    return text
+
 def generate_main_readme_rec(from_path: list[str], template_path: str, readme_path: str) -> str:
     md_lines = []
     folders_map = {}
@@ -211,9 +220,10 @@ def generate_main_readme_rec(from_path: list[str], template_path: str, readme_pa
 
 
     for folder, out_paths in folders_map.items():
-        md_lines.extend([f"## 📌 {folder}", "", "🔹 **Algoritmi trattati**:"])
+        description = get_folder_desrciption(os.path.dirname(out_paths[0]))
+        md_lines.extend([f"## 📌 {folder}: {description}", "", "🔹 **Algoritmi trattati**:"])
         md_lines.extend([f"- ✅ [{' '.join(s.capitalize() for s in os.path.basename(out_path).replace('.md', '').split('_'))}]({out_path})" for out_path in out_paths])
-        md_lines.extend(["", f"📂 **Percorso file:** `{os.path.dirname(out_path)}`"])
+        md_lines.extend(["", f"📂 **Percorso file:** `{os.path.dirname(out_paths[0])}`"])
         md_lines.extend(["", "---", ""])
 
     write_readme_template(template_path, readme_path, "\n".join(md_lines))
