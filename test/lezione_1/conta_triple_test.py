@@ -18,9 +18,9 @@ test_cases = [
 @pytest.mark.parametrize("arr, k, expected", test_cases)
 def test_conta_triple_bruteforce(arr, k, expected):
     res = conta_triple_bruteforce(arr, k)
-    assert res == expected, f"Failed for {arr} with k={k}, expected {expected} but got {res}"
+    assert res == expected, f"Failed for {arr} with k={k}, expected {expected}, got {res}"
 
 @pytest.mark.parametrize("arr, k, expected", test_cases)
 def test_conta_triple_set(arr, k, expected):
     res = conta_triple_set(arr, k)
-    assert res == expected, f"Failed for {arr} with k={k}, expected {expected} but got {res}"
+    assert res == expected, f"Failed for {arr} with k={k}, expected {expected}, got {res}"

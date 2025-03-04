@@ -46,9 +46,9 @@ test_cases = [
 @pytest.mark.parametrize("M, expected", test_cases)
 def test_pozzo_universale_bruteforce(M, expected):
     res = pozzo_universale_bruteforce(M)
-    assert res == expected, f"Failed for {M}, expected {expected}"
+    assert res == expected, f"Failed for {M}, expected {expected}, got {res}"
 
 @pytest.mark.parametrize("M, expected", test_cases)
 def test_pozzo_universale_con_eliminazione(M, expected):
     res = pozzo_universale_con_eliminazione(M)
-    assert res == expected, f"Failed for {M}, expected {expected}"
+    assert res == expected, f"Failed for {M}, expected {expected}, got {res}"

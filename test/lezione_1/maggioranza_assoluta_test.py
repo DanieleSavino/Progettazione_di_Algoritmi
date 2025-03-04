@@ -20,16 +20,20 @@ test_cases = [
 
 @pytest.mark.parametrize("arr, expected", test_cases)
 def test_maggioranza_assoluta_count(arr, expected):
-    assert maggioranza_assoluta_count(arr) == expected, f"Failed for input list: {arr}, expected {expected}"
+    res = maggioranza_assoluta_count(arr)
+    assert res == expected, f"Failed for input list: {arr}, expected {expected}, got {res}"
 
 @pytest.mark.parametrize("arr, expected", test_cases)
 def test_maggioranza_assoluta_sort(arr, expected):
-    assert maggioranza_assoluta_sort(arr) == expected, f"Failed for input list: {arr}, expected {expected}"
+    res = maggioranza_assoluta_sort(arr)
+    assert res == expected, f"Failed for input list: {arr}, expected {expected}, got {res}"
 
 @pytest.mark.parametrize("arr, expected", test_cases)
 def test_maggioranza_assoluta_hashmap(arr, expected):
-    assert maggioranza_assoluta_hashmap(arr) == expected, f"Failed for input list: {arr}, expected {expected}"
+    res = maggioranza_assoluta_hashmap(arr)
+    assert res == expected, f"Failed for input list: {arr}, expected {expected}, got {res}"
 
 @pytest.mark.parametrize("arr, expected", test_cases)
 def test_maggioranza_con_eliminazione(arr, expected):
-    assert maggioranza_assoluta_con_eliminazione(arr) == expected, f"Failed for input list: {arr}, expected {expected}"
+    res = maggioranza_assoluta_con_eliminazione(arr)
+    assert res == expected, f"Failed for input list: {arr}, expected {expected}, got {res}"

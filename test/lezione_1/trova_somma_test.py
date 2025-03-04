@@ -27,24 +27,24 @@ test_cases = [
 def test_trova_somma_bruteforce(arr, k, exist):
     res = trova_somma_bruteforce(arr, k)
     if not res: 
-        assert not exist, f"Failed for input: {arr} ==> {k}"
+        assert not exist, f"Failed for input: {arr} ==> {k}, expected None, got {res}"
         return
     
-    assert type(res) == tuple, f"Failed for input: {arr} ==> {k}"
+    assert type(res) == tuple, f"Failed for input: {arr} ==> {k}, expected tuple, got {type(res)}"
     n1, n2 = res
 
-    assert (n1 in arr) and (n2 in arr), f"Failed for input: {arr} ==> {k}"
-    assert n1 + n2 == k, f"Failed for input: {arr} ==> {k}"
+    assert (n1 in arr) and (n2 in arr), f"Failed for input: {arr} ==> {k}, {n1} or {n2} is not in {arr}"
+    assert n1 + n2 == k, f"Failed for input: {arr} ==> {k}, {n1} + {n2} != {k}"
 
 @pytest.mark.parametrize("arr, k, exist", test_cases)
 def test_trova_somma_set(arr, k, exist):
     res = trova_somma_set(arr, k)
     if not res: 
-        assert not exist, f"Failed for input: {arr} ==> {k}"
+        assert not exist, f"Failed for input: {arr} ==> {k}, expected None, got {res}"
         return
     
-    assert type(res) == tuple, f"Failed for input: {arr} ==> {k}"
+    assert type(res) == tuple, f"Failed for input: {arr} ==> {k}, expected tuple, got {type(res)}"
     n1, n2 = res
 
-    assert (n1 in arr) and (n2 in arr), f"Failed for input: {arr} ==> {k}"
-    assert n1 + n2 == k, f"Failed for input: {arr} ==> {k}"
+    assert (n1 in arr) and (n2 in arr), f"Failed for input: {arr} ==> {k}, {n1} or {n2} is not in {arr}"
+    assert n1 + n2 == k, f"Failed for input: {arr} ==> {k}, {n1} + {n2} != {k}"

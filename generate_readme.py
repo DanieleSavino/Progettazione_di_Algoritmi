@@ -48,7 +48,7 @@ def generate_codes(lines: list[str]) -> list[str]:
 
     latest_def = None
     for i in range(1, len(lines)):
-        line = lines[i].strip()
+        line = lines[i]
         if line.startswith('def'):
             if latest_def is None:
                 latest_def = i
@@ -152,11 +152,11 @@ def generate_local_readme(lines: list[str]) -> str:
     return "\n".join(md_lines)
 
 def local_readme_from_file(file_path: str) -> str:
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding="utf-8") as f:
         readme = generate_local_readme(f.readlines())
 
     out_path = file_path.replace('.py', '.md')
-    with open(out_path, 'w') as f:
+    with open(out_path, 'w', encoding="utf-8") as f:
         f.write(readme)
 
     return out_path
@@ -175,12 +175,12 @@ def generate_rec(folder_path: str) -> list[str]:
     return out_paths
 
 def write_readme_template(template_path: str, readme_path: str, to_write: str) -> None:
-    with open(template_path, 'r') as f:
+    with open(template_path, 'r', encoding="utf-8") as f:
         template = f.read()
 
     template = template % to_write
 
-    with open(readme_path, 'w') as f:
+    with open(readme_path, 'w', encoding="utf-8") as f:
         f.write(template)
 
 def paths_sorter(x: str) -> int:
@@ -197,7 +197,7 @@ def get_folder_desrciption(path: str) -> str:
     if not os.path.exists(desc_path):
         return ''
 
-    with open(desc_path, 'r') as f:
+    with open(desc_path, 'r', encoding="utf-8") as f:
         text = f.read()
 
     return text

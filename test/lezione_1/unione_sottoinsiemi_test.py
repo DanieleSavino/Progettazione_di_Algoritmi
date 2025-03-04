@@ -14,8 +14,10 @@ test_cases = [
 
 @pytest.mark.parametrize("sets, S, expected", test_cases)
 def test_unione_sottoinsiemi_bruteforce(sets, S, expected):
-    assert unione_sottoinsiemi_bruteforce(sets, S) == expected, f"Failed for {sets} with S={S}, expected {expected}"
+    res = unione_sottoinsiemi_bruteforce(sets, S)
+    assert res == expected, f"Failed for {sets} with S={S}, expected {expected}, got {res}"
 
 @pytest.mark.parametrize("sets, S, expected", test_cases)
 def test_unione_sottoinsiemi_bruteforce(sets, S, expected):
-    assert unione_sottoinsiemi_set(sets, S) == expected, f"Failed for {sets} with S={S}, expected {expected}"
+    res = unione_sottoinsiemi_set(sets, S)
+    assert res == expected, f"Failed for {sets} with S={S}, expected {expected}, got {res}"
