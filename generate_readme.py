@@ -157,7 +157,7 @@ def local_readme_from_file(file_path: str) -> str:
 
     out_path = file_path.replace('.py', '.md')
     with open(out_path, 'w', encoding="utf-8") as f:
-        f.write(readme)
+        f.write(readme.replace('\\', '/'))
 
     return out_path
 
@@ -178,7 +178,7 @@ def write_readme_template(template_path: str, readme_path: str, to_write: str) -
     with open(template_path, 'r', encoding="utf-8") as f:
         template = f.read()
 
-    template = template % to_write
+    template = template % (to_write.replace('\\', '/'))
 
     with open(readme_path, 'w', encoding="utf-8") as f:
         f.write(template)

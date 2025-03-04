@@ -13,30 +13,30 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 ## 📌 Lezione 1: Richiami ad `Introduzione agli Algoritmi`
 
 🔹 **Algoritmi trattati**:
-- ✅ [Conta Triple](src\lezione_1\conta_triple.md)
-- ✅ [Maggioranza Assoluta](src\lezione_1\maggioranza_assoluta.md)
-- ✅ [Trova Somma](src\lezione_1\trova_somma.md)
-- ✅ [Unione Sottoinsiemi](src\lezione_1\unione_sottoinsiemi.md)
+- ✅ [Conta Triple](src/lezione_1/conta_triple.md)
+- ✅ [Maggioranza Assoluta](src/lezione_1/maggioranza_assoluta.md)
+- ✅ [Trova Somma](src/lezione_1/trova_somma.md)
+- ✅ [Unione Sottoinsiemi](src/lezione_1/unione_sottoinsiemi.md)
 
-📂 **Percorso file:** `src\lezione_1`
+📂 **Percorso file:** `src/lezione_1`
 
 ---
 
 ## 📌 Lezione 2: Introduzione ai Grafi
 
 🔹 **Algoritmi trattati**:
-- ✅ [Pozzo Universale](src\lezione_2\pozzo_universale.md)
+- ✅ [Pozzo Universale](src/lezione_2/pozzo_universale.md)
 
-📂 **Percorso file:** `src\lezione_2`
+📂 **Percorso file:** `src/lezione_2`
 
 ---
 
 ## 📌 Lezione 3: `DFS`, Depth First Search
 
 🔹 **Algoritmi trattati**:
-- ✅ [Depth First Search](src\lezione_3\depth_first_search.md)
+- ✅ [Depth First Search](src/lezione_3/depth_first_search.md)
 
-📂 **Percorso file:** `src\lezione_3`
+📂 **Percorso file:** `src/lezione_3`
 
 ---
 
