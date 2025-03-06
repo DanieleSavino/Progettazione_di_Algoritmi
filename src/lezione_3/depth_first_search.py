@@ -1,11 +1,11 @@
-# Algoritmo DFS, esegue una ricerca dei nodi connesi in un grafo (in profondità)
+# Algoritmo `DFS`, esegue una ricerca dei nodi connesi in un grafo (in profondità)
 
 """
     Dato un grafo come matrice binaria di adiacenza o come liste di adiacenza vogliamo trovare tutti i nodi connesi 
     in un grafo partendo da un nodo `x`, vogliamo inoltre eseguire questa ricerca in profondità.
 """
 
-## DFS su grafo come matrice binaria di adiacenza ricorsivo
+## `DFS` su grafo come matrice binaria di adiacenza ricorsivo
 def DFS_matrice_rec(M, x, seen=None):
     """
         Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,
@@ -33,7 +33,7 @@ def DFS_matrice_rec(M, x, seen=None):
 
     return seen
 
-## DFS su grafo come matrice binaria di adiacenza iterativo
+## `DFS` su grafo come matrice binaria di adiacenza iterativo
 def DFS_matrice_iter(M, x):
     """
         Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,
@@ -64,7 +64,7 @@ def DFS_matrice_iter(M, x):
     
     return seen
 
-## DFS su grafo come liste di adiacenza ricorsivo
+## `DFS` su grafo come liste di adiacenza ricorsivo
 def DFS_liste_rec(G, x, seen=None):
     """
         Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,
@@ -90,7 +90,7 @@ def DFS_liste_rec(G, x, seen=None):
 
     return seen
 
-## DFS su grafo come liste di adiacenza iterativo
+## `DFS` su grafo come liste di adiacenza iterativo
 def DFS_liste_iter(G, x):
     """
         Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,

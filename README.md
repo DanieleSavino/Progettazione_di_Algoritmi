@@ -40,6 +40,16 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 4: Algoritmo `path finding` su grafi tramite DFS 
+
+🔹 **Algoritmi trattati**:
+- ✅ [Dfs Padri](src/lezione_4/dfs_padri.md)
+- ✅ [Trova Path](src/lezione_4/trova_path.md)
+
+📂 **Percorso file:** `src/lezione_4`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 
