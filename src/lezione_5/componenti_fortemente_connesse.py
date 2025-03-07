@@ -59,7 +59,7 @@ def componente_intersezione(l1:list[bool], l2:list[bool], components, c) -> None
         Gli elementi `True` sia in `l1` che in `l2` saranno nella stessa componente.
     """
     # Tempo: `O(n)`, dove `n` è il numero di nodi, poichè iteriamo sui nodi
-    # Spazio: `O(1), poichè non utilizza strutture dati aggiuntive
+    # Spazio: `O(1)`, poichè non utilizza strutture dati aggiuntive
 
     if len(l1) != len(l2): return None
 

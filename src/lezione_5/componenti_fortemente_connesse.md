@@ -80,7 +80,7 @@ Gli elementi `True` sia in `l1` che in `l2` saranno nella stessa componente.
 
 ### Complessità:
 - **Tempo:** `O(n)`, dove `n` è il numero di nodi, poichè iteriamo sui nodi
-- **Spazio:** `O(1), poichè non utilizza strutture dati aggiuntive
+- **Spazio:** `O(1)`, poichè non utilizza strutture dati aggiuntive
 
 ### Codice:
 ```python
