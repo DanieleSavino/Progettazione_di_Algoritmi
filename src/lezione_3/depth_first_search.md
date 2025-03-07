@@ -1,15 +1,15 @@
-# Algoritmo `DFS`, esegue una ricerca dei nodi connesi in un grafo (in profondità)
+# Algoritmo DFS, esegue una ricerca dei nodi connesi in un grafo (in profondità)
 
 Dato un grafo come matrice binaria di adiacenza o come liste di adiacenza vogliamo trovare tutti i nodi connesiin un grafo partendo da un nodo `x`, vogliamo inoltre eseguire questa ricerca in profondità.
 
-1. [**`DFS` su grafo come matrice binaria di adiacenza ricorsivo**](#1-`dfs`-su-grafo-come-matrice-binaria-di-adiacenza-ricorsivo)
-2. [**`DFS` su grafo come matrice binaria di adiacenza iterativo**](#2-`dfs`-su-grafo-come-matrice-binaria-di-adiacenza-iterativo)
-3. [**`DFS` su grafo come liste di adiacenza ricorsivo**](#3-`dfs`-su-grafo-come-liste-di-adiacenza-ricorsivo)
-4. [**`DFS` su grafo come liste di adiacenza iterativo**](#4-`dfs`-su-grafo-come-liste-di-adiacenza-iterativo)
+1. [**DFS su grafo come matrice binaria di adiacenza ricorsivo**](#1-dfs-su-grafo-come-matrice-binaria-di-adiacenza-ricorsivo)
+2. [**DFS su grafo come matrice binaria di adiacenza iterativo**](#2-dfs-su-grafo-come-matrice-binaria-di-adiacenza-iterativo)
+3. [**DFS su grafo come liste di adiacenza ricorsivo**](#3-dfs-su-grafo-come-liste-di-adiacenza-ricorsivo)
+4. [**DFS su grafo come liste di adiacenza iterativo**](#4-dfs-su-grafo-come-liste-di-adiacenza-iterativo)
 
 ---
 
-## 1. `DFS` su grafo come matrice binaria di adiacenza ricorsivo
+## 1. DFS su grafo come matrice binaria di adiacenza ricorsivo
 
 ### Descrizione:
 Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,
@@ -46,7 +46,7 @@ def DFS_matrice_rec(M, x, seen=None):
 
 ---
 
-## 2. `DFS` su grafo come matrice binaria di adiacenza iterativo
+## 2. DFS su grafo come matrice binaria di adiacenza iterativo
 
 ### Descrizione:
 Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,
@@ -86,7 +86,7 @@ def DFS_matrice_iter(M, x):
 
 ---
 
-## 3. `DFS` su grafo come liste di adiacenza ricorsivo
+## 3. DFS su grafo come liste di adiacenza ricorsivo
 
 ### Descrizione:
 Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,
@@ -121,7 +121,7 @@ def DFS_liste_rec(G, x, seen=None):
 
 ---
 
-## 4. `DFS` su grafo come liste di adiacenza iterativo
+## 4. DFS su grafo come liste di adiacenza iterativo
 
 ### Descrizione:
 Partendo dal nodo `x` creiamo una lista seen di flag che determinano se abbiamo già visitato il nodo `seen[nodo]`,

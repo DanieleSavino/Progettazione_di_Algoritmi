@@ -50,6 +50,16 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 5: Componenti Connesse in un Grafo
+
+🔹 **Algoritmi trattati**:
+- ✅ [Componenti Connesse](src/lezione_5/componenti_connesse.md)
+- ✅ [Componenti Fortemente Connesse](src/lezione_5/componenti_fortemente_connesse.md)
+
+📂 **Percorso file:** `src/lezione_5`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 
