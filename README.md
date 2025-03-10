@@ -60,6 +60,16 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 6: Sort Topologico e Grafi Ciclici
+
+🔹 **Algoritmi trattati**:
+- ✅ [Grafi Ciclici](src/lezione_6/grafi_ciclici.md)
+- ✅ [Sort Topologico](src/lezione_6/sort_topologico.md)
+
+📂 **Percorso file:** `src/lezione_6`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 
