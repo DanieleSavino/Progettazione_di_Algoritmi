@@ -70,6 +70,15 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 7: 
+
+🔹 **Algoritmi trattati**:
+- ✅ [Archi Ponte](src/lezione_7/archi_ponte.md)
+
+📂 **Percorso file:** `src/lezione_7`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 
