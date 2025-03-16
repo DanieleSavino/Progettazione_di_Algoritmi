@@ -4,7 +4,7 @@
     Dato un grafo come liste di adiacenza vogliamo trovare tutte i nodi raggiungibili da `x` eseguendo una ricerca `in ampiezza`
 """
 
-## Algoritmo BFS per verificare se i nodi sono raggiungibili dal nodo di partenza
+## Algoritmo BFS
 def BFS(G: list[list[int]], x: int) -> list[bool]:
     """
         Esegue una ricerca in ampiezza (BFS) partendo dal nodo `x` e ritorna una lista di valori booleani

@@ -4,7 +4,7 @@
     Dato un grafo come liste di adiacenza vogliamo trovare il path minimo tra `x` e `t`.
 """
 
-## Algoritmo BFS per trovare i padri (genitori) di ogni nodo
+## Algoritmo BFS per trovare i padri
 def BFS_padri(G: list[list[int]], x: int):
     """
         Esegue una ricerca in ampiezza (BFS) partendo dal nodo `x` e ritorna una lista di padri
