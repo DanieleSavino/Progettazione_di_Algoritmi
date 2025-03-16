@@ -1,4 +1,4 @@
-# Algoritmo per trovare gli Archi Ponte
+# Algoritmo per Trovare Archi Ponte
 
 Dato un grafo `non diretto`, vogliamo determinare gli `archi ponte`, ovvero gli archi che, se rimossi, aumentano il numero di componenti connesse del grafo.
 

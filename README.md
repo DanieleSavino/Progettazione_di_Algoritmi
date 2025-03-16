@@ -70,12 +70,22 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
-## 📌 Lezione 7: 
+## 📌 Lezione 7: Archi Ponte in Grafi non Diretti
 
 🔹 **Algoritmi trattati**:
 - ✅ [Archi Ponte](src/lezione_7/archi_ponte.md)
 
 📂 **Percorso file:** `src/lezione_7`
+
+---
+
+## 📌 Lezione 8: `BFS` e Path Minimo
+
+🔹 **Algoritmi trattati**:
+- ✅ [Breadth First Search](src/lezione_8/breadth_first_search.md)
+- ✅ [Path Minimo](src/lezione_8/path_minimo.md)
+
+📂 **Percorso file:** `src/lezione_8`
 
 ---
 
