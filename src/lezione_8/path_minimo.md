@@ -2,12 +2,12 @@
 
 Dato un grafo come liste di adiacenza vogliamo trovare il path minimo tra `x` e `t`.
 
-1. [**Algoritmo BFS per trovare i padri (genitori) di ogni nodo**](#1-algoritmo-bfs-per-trovare-i-padri-(genitori)-di-ogni-nodo)
+1. [**Algoritmo BFS per trovare i padri**](#1-algoritmo-bfs-per-trovare-i-padri)
 2. [**Algoritmo per trovare il percorso minimo tra due nodi**](#2-algoritmo-per-trovare-il-percorso-minimo-tra-due-nodi)
 
 ---
 
-## 1. Algoritmo BFS per trovare i padri (genitori) di ogni nodo
+## 1. Algoritmo BFS per trovare i padri
 
 ### Descrizione:
 Esegue una ricerca in ampiezza (BFS) partendo dal nodo `x` e ritorna una lista di padri

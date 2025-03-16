@@ -2,11 +2,11 @@
 
 Dato un grafo come liste di adiacenza vogliamo trovare tutte i nodi raggiungibili da `x` eseguendo una ricerca `in ampiezza`
 
-1. [**Algoritmo BFS per verificare se i nodi sono raggiungibili dal nodo di partenza**](#1-algoritmo-bfs-per-verificare-se-i-nodi-sono-raggiungibili-dal-nodo-di-partenza)
+1. [**Algoritmo BFS**](#1-algoritmo-bfs)
 
 ---
 
-## 1. Algoritmo BFS per verificare se i nodi sono raggiungibili dal nodo di partenza
+## 1. Algoritmo BFS
 
 ### Descrizione:
 Esegue una ricerca in ampiezza (BFS) partendo dal nodo `x` e ritorna una lista di valori booleani
