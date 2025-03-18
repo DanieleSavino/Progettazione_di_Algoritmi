@@ -89,6 +89,15 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 9: Grafi Pesati e Algoritmo di `Dijkstra`
+
+🔹 **Algoritmi trattati**:
+- ✅ [Dijkstra](src/lezione_9/dijkstra.md)
+
+📂 **Percorso file:** `src/lezione_9`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 

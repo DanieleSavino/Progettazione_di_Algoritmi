@@ -10,8 +10,8 @@ def BFS_padri(G: list[list[int]], x: int):
         Esegue una ricerca in ampiezza (BFS) partendo dal nodo `x` e ritorna una lista di padri
         dove ogni elemento rappresenta il nodo padre di ogni nodo raggiungibile.
     """
-    # Tempo: O(n + m), dove n è il numero di nodi e m è il numero di archi nel grafo.
-    # Spazio: O(n), dove n è il numero di nodi (memoria per la lista dei padri e la coda).
+    # Tempo: `O(n + m)`, dove n è il numero di nodi e m è il numero di archi nel grafo.
+    # Spazio: `O(n)`, dove n è il numero di nodi (memoria per la lista dei padri e la coda).
 
     fathers_list = [-1] * len(G)  
     fathers_list[x] = x  

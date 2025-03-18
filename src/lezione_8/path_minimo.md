@@ -14,8 +14,8 @@ Esegue una ricerca in ampiezza (BFS) partendo dal nodo `x` e ritorna una lista d
 dove ogni elemento rappresenta il nodo padre di ogni nodo raggiungibile.
 
 ### Complessità:
-- **Tempo:** O(n + m), dove n è il numero di nodi e m è il numero di archi nel grafo.
-- **Spazio:** O(n), dove n è il numero di nodi (memoria per la lista dei padri e la coda).
+- **Tempo:** `O(n + m)`, dove n è il numero di nodi e m è il numero di archi nel grafo.
+- **Spazio:** `O(n)`, dove n è il numero di nodi (memoria per la lista dei padri e la coda).
 
 ### Codice:
 ```python
