@@ -98,6 +98,16 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 10: Algoritmo di `Kruskal`
+
+🔹 **Algoritmi trattati**:
+- ✅ [Connetti Grafo](src/lezione_10/connetti_grafo.md)
+- ✅ [Kruskal](src/lezione_10/kruskal.md)
+
+📂 **Percorso file:** `src/lezione_10`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 
