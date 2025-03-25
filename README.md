@@ -108,6 +108,16 @@ Ogni lezione contiene problemi algoritmici corredati da soluzioni ottimizzate e 
 
 ---
 
+## 📌 Lezione 11: 
+
+🔹 **Algoritmi trattati**:
+- ✅ [Union Find](src/lezione_11/union_find.md)
+- ✅ [Union Find Naive](src/lezione_11/union_find_naive.md)
+
+📂 **Percorso file:** `src/lezione_11`
+
+---
+
 
 ## 📢 Esecuzione dei Test
 
